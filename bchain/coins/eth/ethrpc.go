@@ -164,6 +164,14 @@ func (b *EthereumRPC) Initialize() error {
 		b.Testnet = false
 		b.Network = "livenet"
 		break
+	case BscMainNet:
+		b.Testnet = false
+		b.Network = "bsclivenet"
+		break
+	case HecoMainNet:
+		b.Testnet = false
+		b.Network = "hecolivenet"
+		break
 	case TestNet:
 		b.Testnet = true
 		b.Network = "testnet"
@@ -171,6 +179,12 @@ func (b *EthereumRPC) Initialize() error {
 	case TestNetGoerli:
 		b.Testnet = true
 		b.Network = "goerli"
+	case BscTestNet:
+		b.Testnet = true
+		b.Network = "bsctestnet"
+	case HecoTestNet:
+		b.Testnet = true
+		b.Network = "hecotestnet"
 	default:
 		return errors.Errorf("Unknown network id %v", id)
 	}
