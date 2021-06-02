@@ -31,6 +31,12 @@ const (
 	TestNet EthereumNet = 3
 	// TestNetGoerli is Goerli test network
 	TestNetGoerli EthereumNet = 5
+
+	BscMainNet EthereumNet = 56
+	BscTestNet EthereumNet = 97
+
+	HecoMainNet EthereumNet = 128
+	HecoTestNet EthereumNet = 256
 )
 
 // Configuration represents json config file
